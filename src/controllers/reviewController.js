@@ -1,7 +1,6 @@
 const BookModel = require("../models/bookModel")
 const UserModel = require("../models/userModel")
 const ReviewModel = require("../models/reviewModel")
-
 //Creating a validation function
 const isValid = function (value) {
     if (typeof (value) === undefined || typeof (value) === null) { return false }
@@ -185,7 +184,7 @@ const deleteReview = async (req, res) =>  {
                     }
                 }, { new: true })
         //Sending the deleted response
-        return res.status(200).send({ status: true, message: "Your Book details have been successfully deleted", data: deletedReview })
+        return res.status(200).send({ status: true, message: "Your Book reviews have been successfully deleted", data: deletedReview })
     }
 
     //Exceptional error handling

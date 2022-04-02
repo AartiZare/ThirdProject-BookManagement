@@ -209,6 +209,7 @@ const getBookById = async (req , res) => {
 
     }
 
+
     //Exceptional error handling
     catch (error) {
         console.log(error)
